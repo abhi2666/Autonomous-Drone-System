@@ -19,4 +19,24 @@ NOTE - you need GPS enabled drone to perfrom both the tasks because that is how 
 ![Screenshot (246)](https://github.com/abhi2666/Autonomous-Drone-System/assets/95623413/691a6bba-079e-46f7-8a39-a244ccbc1cc0)
 
 
+Softwares and Libraries Required -
+
+1. Ubuntu 20.04
+2. Ardupilot - you will need to install this inorder to use the autopilot. You can see the 2D view of your simulated drone in map (map is part of ardupilot and opens automatically with the ardupilot software).
+3. Dronekit - this library is used for actually programming the drone to perfrom the task. Can be used to program both simulated and physical drone.
+4. Mavlink & Mavproxy - mavlink is the communication protocol that we will use communicate with the drone through GCS (Ground Control Station) and mavproxy is the command line itself where we will use the mavlink.
+5. Gazebo - this software is essential if you want to see the 3D overview of your simnulated drone. It connectes with GCS through mavproxy and then can use the GCS data to show 3D simulation of the drone.
+NOTE - to use Gazebo, you will need a good amount of graphical memory and therefore using a VM may not be the best option. Though you can use VM but the 3D visualization will be choppy and laggy.
+
+Python Version used - 3.8 and 3.9.14 are the two versions that were used. You can have only 3.9.14 as well and it will still work.
+
+How to install - 
+
+Follow the step by step guide in the ardupilot webiste to install it and then install dronekit seperately. You may need to install some other libraries as well in order to install all these. For gazebo, install the noetic version, which was used in this project.
+
+GAZEBO 3D view -
+
+
+![Screenshot (290)](https://github.com/abhi2666/Autonomous-Drone-System/assets/95623413/5c4ac918-f4ea-4e49-9ee8-b7528191e648)
+
 For brief overview please contact using the above mail.
